@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 production_now = Product.create(title: "Video Making Sucks",
-	subtitle: "&amp; what you can do about it", author: "Luke Holzmann", price: "5.99", sku: "VIDEOSUCKS1",
+	subtitle: "& what you can do about it", author: "Luke Holzmann", length: "6 Short Videos", author_image_name: "teacher-image.jpg", price: "5.99", sku: "VIDEOSUCKS1", download_url: "https://s3.amazonaws.com/Master-Your-Mechanics/Practice+Like+a+Pro+1.0.pdf", details: "You'll get 6 quick, easy lessons",
 	description: %{<p>You can make videos. But right now, sitting in front of your computer, no fancy equipment on hand, and a dream the size of the silver screen stuffed in the torn up shoebox over there, you probably don’t feel it.</p>
 
             <p>That’s because making videos is hard. No one told you this. You just know it. That’s good because it means you’ve got your head on straight.</p>
@@ -31,4 +31,8 @@ production_now = Product.create(title: "Video Making Sucks",
                 <li>The horrible truth about making videos (the good news is once you know about it it will become your best friend)</li>
                 <li>Workable project files so you can start NOW</li>
                 <li>The confidence to use what you have at your fingertips to make movies your friends will rave about</li>
-            </ul>})
+            </ul>},
+						author_description: %{<p>Hey, I'm Luke Holzmann. I'm pretty awesome for all of these reasons: I make sweet movies that have sold hundreds of thousands of titles. I went to film school and got sick awards.</p>
+                <p>Why take my class? If you want to get into video for any reason but just haven't been able to take the plunge... My goal is .
+                </p>
+                <p>Follow my YouTube channel <a href="https://www.youtube.com/user/ProductionNotes" target="_blank">youtube.com/user/ProductionNotes</a></p>})
