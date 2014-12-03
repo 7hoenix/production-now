@@ -8,11 +8,11 @@
         <aside id="details-aside" class="col-sm-4">
             <!-- <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</a> -->
             <%= form_tag charges_path, id: 'chargeForm' do %>
-    
+
             <script src="https://checkout.stripe.com/checkout.js"></script>
             <%= hidden_field_tag 'stripeToken' %>
             <%= hidden_field_tag 'stripeEmail' %>
-            <%= hidden_field_tag 'amount', @product.price_in_cents %>  
+            <%= hidden_field_tag 'amount', @product.price_in_cents %>
             <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</button>
             <script>
             var handler = StripeCheckout.configure({
@@ -62,8 +62,11 @@ Made by <a href="http://blog.production-now.com/"><strong>Production Now</strong
       <div class="modal-body clearfix">
             <div id="modal-left" class="pull-left">
                 <p><strong><%= @product.author %></strong></p>
-                <%= @product.author_description %>
-                
+                <p>Hey, I'm Luke Holzmann. I'm pretty awesome for all of these reasons: I make sweet movies that have sold hundreds of thousands of titles. I went to film school and got sick awards.</p>
+                <p>Why take my class? If you want to get into video but just haven't taken the plunge.
+                </p>
+                <p>Follow my YouTube channel <a href="https://www.youtube.com/user/ProductionNotes" target="_blank">youtube.com/user/ProductionNotes</a></p>
+
             </div>
             <div id="modal-right" class="pull-right">
                 <%= image_tag(@product.author_image_name, alt: @product.author)   %>

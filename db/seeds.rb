@@ -32,7 +32,4 @@ production_now = Product.create(title: "Video Making Sucks",
                 <li>Workable project files so you can start NOW</li>
                 <li>The confidence to use what you have at your fingertips to make movies your friends will rave about</li>
             </ul>},
-						author_description: %{<p>Hey, I'm Luke Holzmann. I'm pretty awesome for all of these reasons: I make sweet movies that have sold hundreds of thousands of titles. I went to film school and got sick awards.</p>
-                <p>Why take my class? If you want to get into video for any reason but just haven't been able to take the plunge... My goal is .
-                </p>
-                <p>Follow my YouTube channel <a href="https://www.youtube.com/user/ProductionNotes" target="_blank">youtube.com/user/ProductionNotes</a></p>})
+						author_description: %{})
